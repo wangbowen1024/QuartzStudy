@@ -23,6 +23,6 @@ public class HelloJob implements Job {
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ": Hello World!");
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()) + ": Hello World!");
     }
 }
